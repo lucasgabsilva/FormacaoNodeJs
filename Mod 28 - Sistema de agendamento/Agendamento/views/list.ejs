@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de consultas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            max-width: 50%;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h3>Consultas: </h3>
+    <hr>
+    <form action="/searchresult" method="get" class="form-control">
+        <input type="search" name="search" id="search" placeholder="Email ou CPF">
+        <button class="button btn-primary">Pesquisar</button>
+    </form>
+    <% appos.forEach(appo => {%>
+        <h1>Consulta: <%= appo.description %></h1>
+        <h4>Paciente: <%= appo.name %> </h4>
+        <h4>Email: <%= appo.email %></h4>
+        <h4>CPF: <%= appo.cpf %></h4>
+        <hr>
+    <%})%>
+</body>
+</html>

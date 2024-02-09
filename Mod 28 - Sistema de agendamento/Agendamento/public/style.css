@@ -1,0 +1,26 @@
+body {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+h1{
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 2px 4px #92b7db;
+    font-size: 3.2em;
+    color:#0069D9;
+}
+
+input {
+    margin: auto;
+    margin-top: 1%;
+    box-shadow: 4px 3px 5px #92b7db;
+    max-width: 50%;
+}
+
+button{
+    margin: auto;
+    margin-top: 1%;
+    max-width: 50%;
+    box-shadow: 4px 3px 5px #92b7db;
+}
